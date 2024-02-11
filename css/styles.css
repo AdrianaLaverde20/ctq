@@ -1,0 +1,457 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+*{font-family: 'Montserrat', sans-serif;
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+/* Estilos de cabecera */
+html{
+    scroll-behavior: smooth;
+}
+header{
+    width:100%;
+    padding: 40px 0 0 0;
+    background: url("../img/fondo1.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+header nav{
+    width: 80%;
+    /* height: 400px; */
+    /* centrar un contenedor */
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    }
+    header nav ul{
+        display: flex;
+    }
+    nav ul li{
+      list-style: none;
+      margin: 0 15px ;
+    }
+    
+    nav li a{
+        text-decoration: none;
+        color: white;
+        font-size: 20px;
+        font-weight: 400;
+        transition: .5s;
+    }
+    nav li a:hover{
+        border-bottom: 2px solid #fff;
+        border-top:2px solid #fff ;
+    }
+    #avion{
+        width: 70px; 
+        height: 70px;
+        transition: .5s;
+    }
+    #avion:hover{
+        transform: rotate(180deg);
+    }
+    #logo img{
+        transition: .5s;
+        width: 150px; 
+        height: 100px;
+
+    }
+    #logo img:hover{
+        transform: scale(2.1);
+        
+    }
+    #hero{
+        width: 80%;
+        text-align: center;
+        margin: 0 auto;
+        padding-top: 110px;
+    }
+    #hero h1 {
+        font-size: 40px;
+        background: linear-gradient(to right, rgb(247, 247, 57) 0%, rgb(247, 247, 57) 45%, rgb(112, 112, 233) 46%,rgb(112, 112, 233) 57%, rgb(250, 41, 41) 58%, red 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    
+    #hero h2{
+        font-size: 20px;
+        color: rgb(250, 250, 250);
+        font-weight: 500;
+        text-transform: uppercase;
+        margin-bottom: 90px;
+    }
+    #hero button{
+        background: rgb(88, 88, 88);
+        font-size: 20px;
+        padding: 10px 28px;
+        border-radius: 16px;
+        color: #fdfbfb; ;
+        border-color: transparent;
+        transition: .5s;
+        
+    }
+    #hero button:hover{
+        transform: scale(0.9);
+        background: black;
+    }
+    /* Estilo de destinos */
+    #destinos {
+        width:100%;
+        padding: 40px 0 0 0;
+        background: url("../img/bg-destinos.png");
+        background-size: cover;
+        background-position: center;
+        text-align: center;
+    
+    }
+    #destinos h2{
+        font-size: 50px;
+        margin-bottom: 50px;
+        background: linear-gradient(to right, rgb(247, 247, 57) 0%, rgb(247, 247, 57) 45%, rgb(112, 112, 233) 46%,rgb(112, 112, 233) 57%, rgb(250, 41, 41) 58%, red 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-align: center;
+        padding-top: 100px;
+    }
+    #destinos .fila{
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-around;
+        padding-top: 80px;
+    }
+    
+    
+    .col-destino {
+        position: relative;
+        display: inline-block;
+        margin: 10px;
+    }
+    
+    .col-destino .overlay {
+        position: relative;
+        width: 100%;
+        height: auto;
+    }
+    
+    .col-destino img {
+        display: block;
+        width: 100%;
+        height: auto;
+        transition: filter 0.3s ease;
+        transition: .5s;
+
+    }
+    
+    .col-destino:hover img {
+        filter: brightness(40%);
+        transform: rotate(360deg);
+        border-radius: 50%;
+    }
+    
+    .col-destino .text p {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        opacity: 0;
+        transition: opacity 0.4s ease;
+    }
+    
+    .col-destino:hover .text p {
+        opacity: 1;
+    }
+    
+    #destinos .col-destino h3{
+    
+        text-align: center;
+        color: rgb(0, 0, 0);
+        /* z-index: 99; para poner el texto atras o adelante */
+    }
+    
+    
+    .text p {
+        color: white;
+        font-size: 16px;
+    }
+
+    /* Stilo de comidas tipicas */
+    #comidas_tipicas {
+        width: 100%;
+        padding: 40px 0 0 0;
+        background: url("../img/fondo2.jpg");
+        background-size: cover;
+        background-position: center;
+        text-align: center;
+        padding-top: 150px;
+        padding-bottom: 150px;
+    }
+    
+    
+    #comidas_tipicas h2 {
+        font-size: 50px;
+        margin-bottom: 50px;
+        background: linear-gradient(to right, rgb(247, 247, 57) 0%, rgb(247, 247, 57) 45%, rgb(112, 112, 233) 46%,rgb(112, 112, 233) 57%, rgb(250, 41, 41) 58%, red 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    
+    #comidas_tipicas h3 p {
+        font-size: 10px;
+    }
+    
+    #comidas_tipicas .fila {
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-around;
+        padding-top: 60px;
+    }
+    
+    #comidas_tipicas .col-comtipi {
+        position: relative;
+        display: inline-block;
+        width: 45%;
+        vertical-align: top;
+        margin: 10px;
+        position: relative;
+    }
+    
+    #comidas_tipicas .col-comtipi img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        transition: transform 0.3s ease;
+        margin-bottom: 20px;
+    }
+    
+    #comidas_tipicas .col-comtipi img:hover {
+        transform: scale(1.20);
+        border-radius: 50%;
+    }
+    
+    #comidas_tipicas .col-comtipi h3{
+        position: absolute;
+        top: 0px;
+        left: 250px;
+        background-color: rgba(255, 255, 255, 0.8);
+        padding: 10px;
+        margin: 10px; /* Ajustar según necesidad */
+        width: 50%;
+        text-align: left;
+        transition: background-color 0.3s ease;
+    }
+    #comidas_tipicas .col-comtipi p {
+        position: absolute;
+        top: 40px;
+        left: 250px;
+        background-color: rgba(255, 255, 255, 0.8);
+        padding: 10px;
+        margin: 10px; /* Ajustar según necesidad */
+        width: 50%;
+        text-align: left;
+        transition: background-color 0.3s ease;
+    }
+    
+    #comidas_tipicas .col-comtipi:hover h3,
+    #comidas_tipicas .col-comtipi:hover p {
+        background-color: rgba(0, 0, 0, 0.8);
+        color: white;
+    }
+    /* Estilos de planes */
+    main{
+        width: 100% ;
+        position: relative;
+    }
+    #planes_turisticos{
+        width: 100%;
+        background: #fff;
+        text-align: center;
+        padding-top: 150px;
+        padding-bottom: 150px;
+    }
+    
+    #planes_turisticos h2{
+        font-size: 50px;
+        margin-bottom: 50px;
+        background: linear-gradient(to right, rgb(247, 247, 57) 0%, rgb(247, 247, 57) 45%, rgb(112, 112, 233) 46%,rgb(112, 112, 233) 57%, rgb(250, 41, 41) 58%, red 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    
+    #planes_turisticos h3 p{
+        font-size: 22px;
+    }
+    
+    #planes_turisticos .fila{
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-around;
+        padding-top: 80px;
+    }
+    #planes_turisticos .col-plan{
+        position: relative;
+    }
+    #planes_turisticos .col-plan h3{
+        position: absolute;
+        top: 100px;
+        left: 0;
+        right: 0;
+        text-align: center;
+        color: yellow;
+        /* z-index: 99; para poner el texto atras o adelante */
+    }
+    #planes_turisticos .col-plan img{
+        width: 290px;
+        border: 6px solid #000;
+        transition: 1s;
+    }
+    #planes_turisticos .col-plan img:hover{
+        transform: rotate(360deg) scale(1.2);
+        border: 2px dotted #fff;
+        border-radius: 50%;
+    }
+    #logo img{
+        transition: .5s;
+        position:relative;
+    }
+    #logo img:hover{
+        transform: scale(1.8);
+    }
+
+    /* ferias y fiestas */
+
+#feriasyfiestas {
+    width:100%;
+    padding: 40px 0 0 0;
+    background: url("../img/fondo\ 3.jpg");
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+
+}
+#feriasyfiestas p {
+    text-align: center;
+    color: white;
+}
+#feriasyfiestas h2{
+    font-size: 50px;
+    margin-bottom: 50px;
+    background: linear-gradient(to right, rgb(247, 247, 57) 0%, rgb(247, 247, 57) 45%, rgb(112, 112, 233) 46%,rgb(112, 112, 233) 57%, rgb(250, 41, 41) 58%, red 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    text-align: center;
+    padding-top: 100px;
+}
+#feriasyfiestas .fila{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 80px;
+}
+
+#feriasyfiestas .col-ferias h3{
+
+    text-align: center;
+    color: white;
+    /* z-index: 99; para poner el texto atras o adelante */
+}
+#feriasyfiestas .col-ferias img{
+    width: 200px;
+    border-radius: 50%;
+    border: 4px solid #000;
+    transition: 1s;
+}
+#feriasyfiestas .col-ferias img:hover{
+    transform: rotate(360deg);
+
+}
+/* estilos de contacto */
+#contacto{
+    width:100%;
+    padding: 40px 0 40px 0;
+    background:  rgb(112, 112, 233);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+
+}
+#contacto h2{
+    font-size: 50px;
+
+}
+#contacto p{
+    font-size: 20px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+#contacto form {
+    width: 80%;
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+#contacto .fila{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+#contacto input,
+#contacto select{
+    width: 48%;
+    padding: 12px 20px;
+    margin: 10px;
+}
+
+#contacto button{
+    color: #fff;
+    font-size: 24px;
+    padding: 6px 40px;
+    border-radius: 4px;
+    margin-top:40px ;
+    border-color: transparent;
+
+}
+#logo img{
+    transition: .5s;
+    position:relative;
+}
+#logo img:hover{
+    transform: scale(1.8);
+}
+#btn{
+    display: block;
+    padding: 12px 20px;
+    background: #000;
+    color: #fff;
+    border-radius: 10px;
+    box-shadow: 5px 5px 4px 3px #999;
+    max-width: 220px;
+    margin: 20px auto;
+    transition: .5s;
+}
+
+
+#btn:hover{
+    transform: scale(0.8);
+    background: #fff;
+    color: #000;
+}
+/* pie de pagina */
+footer{
+    background: #000;
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+    padding: 30px;
+}
+    @media screen and (min-width:768px) and (max-width:990px) {    
+    }
